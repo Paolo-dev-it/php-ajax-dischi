@@ -42,6 +42,34 @@
             'year' => 2002,
             'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
             'genre' => 'Rock'
+        ],
+        [
+            'title' => 'Ten\'s Summoner\'s Tales',
+            'author' => 'Sting',
+            'year' => 1993,
+            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg',
+            'genre' => 'Pop'
+        ],
+        [
+            'title' => 'Steve Gadd band',
+            'author' => 'Steve Gadd Band',
+            'year' => 2018,
+            'poster' => 'https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg',
+            'genre' => 'Jazz'
+        ],
+        [
+            'title' => 'Brave new World',
+            'author' => 'Iron Maiden',
+            'year' => 2000,
+            'poster' => 'https://upload.wikimedia.org/wikipedia/en/0/03/Iron_Maiden_-_Brave_New_World.jpg',
+            'genre' => 'Metal'
+        ],
+        [
+            'title' => 'One more car, one more rider',
+            'author' => 'Eric Clapton',
+            'year' => 2002,
+            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
+            'genre' => 'Rock'
         ]
     ];
  
@@ -62,19 +90,18 @@
     <div class="container">
         <div class="row">
             <?php foreach ($database as $data) { ?>
-                <div class="card" style="width: 18rem;">
+                <div class="card  ">
                     <img src= "<?php echo $data['poster'] ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title"><?php echo $data['title'] ?></h3> 
-                        <h5 class="card-title">
+                    <div class="card-body ">
+                        <h4 class="card-title text-white text-uppercase"><?php echo $data['title'] ?></h4> 
+                        <h5 class="card-title text-white opacity-50">
                         <?php echo $data['author'] ?>
                         </h5>
-                        <p class="card-text">
+                        <p class="card-text text-white opacity-50">
                         <?php echo $data['year'] ?>
                         </p>
                     </div>
                 </div>
-            
         <?php } ?>
         </div>
     </div>

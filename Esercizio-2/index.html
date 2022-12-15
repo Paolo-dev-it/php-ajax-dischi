@@ -21,9 +21,9 @@
           <div class="card" v-for="(elem, index) in arrayCard">
             <img :src="elem.poster" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h4 class="card-title, text-white">{{elem.title}}</h4>
-              <h5 class="card-title">{{elem.author}}</h5>
-              <p class="card-text">{{elem.year}}</p>
+              <h4 class="card-title text-white">{{elem.title}}</h4>
+              <h5 class="card-title text-white opacity-50">{{elem.author}}</h5>
+              <p class="card-text text-white opacity-50">{{elem.year}}</p>
             </div>
           </div>
         </div>
